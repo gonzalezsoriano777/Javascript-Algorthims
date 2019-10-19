@@ -1,3 +1,3 @@
 {
-  "index.js": "function sumAll(arr) {\n \n  var maximum = Math.max(arr[0], arr[1]);\n  var minumum = Math.min(arr[0], arr[1]);\n  var sum = 0;\n\n  for (var i = minumum; i <= maximum; i++) {\n   sum += i;\n  }\n  return sum;\n}\n\nsumAll([1, 4]);"
+  "index.js": "function sumAll(arr) {\n \n   var total = 0;\n   var minNum = Math.min(arr[0], arr[1]);\n   //console.log(minNum);\n   var maxNum = Math.max(arr[0], arr[1]); \n\n   for(var i = minNum; i <= maxNum; i++){\n      if(minNum < maxNum){\n        total += i;\n      }\n   }\n\n   return total; \n}\n\nsumAll([1, 4]);"
 }
