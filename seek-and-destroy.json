@@ -1,0 +1,3 @@
+{
+  "index.js": "function destroyer(arr) {\n  // Remove all the values\n  // 28 minutes, 32 seconds\n  let uniqueArr = [];\n\n  for(var i = 1; i < arguments.length; i++){\n      console.log(\"args[i]\", arguments[i]);\n      uniqueArr.push(arguments[i]);\n  }\n\n    return arr.filter(function(remove){\n      return uniqueArr.indexOf(remove) < 0;\n    })\n\n  return uniqueArr;\n}\n\ndestroyer([1, 2, 3, 1, 2, 3], 2, 3);\n"
+}
