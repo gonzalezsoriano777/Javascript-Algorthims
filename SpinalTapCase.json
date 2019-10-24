@@ -1,0 +1,15 @@
+function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+
+  var i;
+  
+  for(i = 0; i < str.length; i++){
+    str = str.replace(" ", "-").toLowerCase();
+    console.log(str);
+  }
+
+  return str;
+}
+
+spinalCase('This Is Spinal Tap');
