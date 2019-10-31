@@ -1,0 +1,29 @@
+function translatePigLatin(str) {
+  
+  var vowels = new Array('a', 'e', 'i', 'o', 'u');
+
+  if 
+  (str[0] === 'a' || str[0] === 'e' || 
+   str[0] === 'i' || str[0] === 'o' || str[0] === 'u')
+  {
+      return str + "way";
+  }
+
+
+
+  var i;
+  var j;
+  for(i = 0; i < str.length; i++){
+        if(str[i] === vowels[j]){
+           str = str.split("")
+           var splicing = str.splice(0, j);
+           return str.join("") + splicing.join("") + "ay";
+        }
+      }
+  }
+
+  return str;
+  
+}
+
+translatePigLatin("consonant");
