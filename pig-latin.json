@@ -1,3 +1,23 @@
 {
-  "index.js": "function translatePigLatin(str) {\n\n    let vowelMatch = /[aeiou]/gi;\n\n    if(str[0].match(vowelMatch)){\n      return str + \"way\";\n    } \n    else if\n    (str.match(vowelMatch) === null){\n      return str + \"ay\";\n    } else {\n       let findVowel = str.indexOf(str.match(vowelMatch)[0]);\n       console.log(findVowel);\n       str = str.substr(findVowel) + str.substr(0, findVowel) + \"ay\";\n       return str;\n    }\n\n    \n  \n\n    return str;\n}\n\ntranslatePigLatin(\"consonant\");\n"
-}
+  // 35 minutes, 46 seconds
+  function translatePigLatin(str) {
+
+      let vowelMatch = /[aeiou]/gi;
+
+      if(str[0].match(vowelMatch)){
+        return str + "way";
+      } 
+      else if(str.match(vowelMatch) === null){
+        return str + "ay";
+      } else {
+         let findVowel = str.indexOf(str.match(vowelMatch)[0]);
+         console.log(findVowel);
+         str = str.substr(findVowel) + str.substr(0, findVowel) + "ay";
+         return str;
+      }
+
+      return str;
+  }
+
+  translatePigLatin("consonant");
+  }
